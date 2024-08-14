@@ -1,0 +1,15 @@
+services:
+  redis:
+    image: redis:alpine
+
+  app:
+    build: .
+    environment:
+      - PORT=8000
+    ports:
+      - "8000:5000"
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app
