@@ -1,18 +1,18 @@
 {
-  "name": "practice_docker_compose",
+  "name": "docker_compose_nodejs_mongodb",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch app.js",
     "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "redis": "^4.7.0"
+    "mongodb": "^6.8.0"
   }
 }
